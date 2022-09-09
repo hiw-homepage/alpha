@@ -29,3 +29,19 @@ main ol li:nth-of-type(2n)::before {
 main ol li:nth-of-type(3n)::before {
     text-decoration: underline 1px solid var(--theme-color-4);
 }
+main #agreement {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: inline-block;
+    padding: 4px 8px;
+    margin-top: 8px;
+    background-color: var(--theme-color-3);
+    box-sizing: border-box;
+    border: 4px solid var(--theme-color-3);
+    cursor: pointer;
+    transition: .3s;
+}
+main #agreement:hover {
+    border: 4px solid var(--theme-color-3-dark);
+}
