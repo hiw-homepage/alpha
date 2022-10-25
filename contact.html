@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="./img/logos/favicon.ico" type="image/x-icon">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5MYH9476WW"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-5MYH9476WW');
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/forms.css">
+        <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+        <title>お問い合わせ</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <a id="logo" href="./" translate="no">hiw</a><br><nav>
+                    <a href="./terms">Terms</a>
+                    <a href="./enrollement">Enrollment</a>
+                    <a href="./contact">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div id="text">
+                <h1>お問い合わせ</h1>
+                <p>内容を入力してください。</p>
+                <small>メールアドレスは任意ですが、有効でない場合返答できません</small>
+            </div>
+                <iframe src="" name="hidden" hidden></iframe>
+                <form id="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf0uTwFC5KZIs-hiQny20fiyAO4Ykr_i7y1hHfd1muvx8rjZQ/formResponse" target="hidden">
+                    <div>
+                        <label for="entry.399419356">名前<span>*</span><input type="text" name="entry.399419356" required autocomplete="on"></label>
+                        <label for="entry.1144428312">メールアドレス<input type="email" name="entry.1144428312" autocomplete="on"></label>
+                        <label for="entry.591748748">タイトル<span>*</span><input type="text" name="entry.591748748" required autocomplete="off"></label>
+                        <label for="entry.26045273">本文<span>*</span><textarea name="entry.26045273" required autocomplete="off"></textarea></label>
+                    </div>
+                    <button class="button" type="submit">送信</button>
+                    <p id="log"></p>
+                    <script>
+                        function logSubmit(event) {
+                        const nowDate = new Date();
+                        $('#log').text(nowDate.toLocaleString());
+                        $('button[type="submit"]').attr('disabled', 'disabled')
+                        $('button[type="submit"]').css({
+                            'background-color': '#c0c0c0',
+                            'border': '4px solid #c0c0c0',
+                            'cursor': 'not-allowed'
+                        })
+                        setTimeout(function() {
+                            event.preventDefault();
+                        }, 300);
+                        }
+                
+                        const form = document.getElementById('form');
+                        form.addEventListener('submit', logSubmit);
+                    </script>
+                </form>
+        </main>
+    </body>
+</html>

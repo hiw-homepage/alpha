@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
     <head>
         <meta charset="utf-8">
         <link rel="shortcut icon" href="./img/logos/favicon.ico" type="image/x-icon">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5MYH9476WW"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-5MYH9476WW');
+        </script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/base.css">
+        <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/terms.css">
         <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
         <script src=""></script>
@@ -15,32 +24,37 @@
     <body>
         <header>
             <div>
-                <a id="logo" href="./">hiw</a><br><div class="links">
+                <a id="logo" href="./" translate="no">hiw</a><br><nav>
                     <a href="./terms">Terms</a>
                     <a href="./enrollement">Enrollment</a>
-                    <a href="./mail-form">Mail Form</a>
-                </div>
+                    <a href="./contact">Contact</a>
+                </nav>
             </div>
         </header>
         <main>
             <div id="text">
                 <h1>規約</h1>
                 <ol>
-                    <li>死なない事
-                    <li>法に触れない事
-                    <li>感染対策する事
-                    <li>仮に裏切り行為(カップル成立など)が見られた場合、本会員から仮会員への降格、脱退も可ただし連盟から総叩きに遭う可能性有
-                    <li>例外として、申告した場合には総叩きの可能性はなく、仮会員への降格も可
-                    <li>また、仮会員は会員に比べて発言権の権力が1/2になる代わり、後方の支援に関する発言権が会員に比べて2倍になる
-                    <li>補足として、裏切り行為の名前は「U宣言」という(裏切り宣言)
-                    <li>HIWの入会条件である「非リア」「陰キャ」「ヲタク」の内に入らなくても、会員がいれたいものが居れば他会員の満場一致で連盟に入ることを許可するなお、初めは仮会員から始まり「昇格の儀」または幹部3人以上の推薦により会員になることができる
-                    <li>「昇格の儀」は幹部8人以上が特定の人物の昇格に賛同した場合のみ開催する儀である
-                    <li>HIWの議論の場として、「サミット」が設けられることがある
-                    <li>それによる決定事項は非参加の場合、棄却できない
-                    <li>例外として目的を損なわない提案は容認の場合もある
+                    <li>法律に違反しない事</li>
+                    <li>感染症への対策をする事</li>
+                    <li>仮に裏切りとみなされる行為*が見られた場合追放の可能性がある</li>
+                    <small>カップル成立など</small>
+                    <ol>
+                        <li>例外として、申告した場合には、仮会員への降格や脱退も可</li>
+                    </ol>
+                    <li>仮会員は会員に比べて発言の有効性が減少する場合がある</li>
+                    <li>入会条件である「非リア」「陰キャ」「ヲタク」に当てはまらない場合も、本会員の満場一致で入会が可能になる</li>
+                    <ol>
+                        <li>なお入会時は全員が仮会員で、本会員8人または幹部3人以上の推薦により本会員への昇格が可能になる</li>
+                    </ol>
+                    <li>組織の議論の場として「サミット」が設けられる場合がある</li>
+                    <ol>
+                        <li>それによる決定事項は非参加の場合、原則として棄却できない</li>
+                        <li>例外として目的を損なわない提案は容認の場合もある</li>
+                    </ol>
                 </ol>
             </div>
-            <a id="agreement" href="./enrollement">同意しましたか?</a>
+            <a id="agreement" class="button" href="./enrollement" target="_blank">同意しましたか?</a>
         </main>
     </body>
 </html>
